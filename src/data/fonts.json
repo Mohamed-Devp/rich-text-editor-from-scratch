@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Sans Serif",
+    "css": "sans-serif"
+  },
+  {
+    "name": "Serif",
+    "css": "serif"
+  },
+  {
+    "name": "Monospace",
+    "css": "monospace"
+  },
+  {
+    "name": "Cursive",
+    "css": "cursive"
+  },
+  {
+    "name": "Fantasy",
+    "css": "fantasy"
+  }
+]

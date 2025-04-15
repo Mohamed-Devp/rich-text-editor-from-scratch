@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+.app {
+  width: 100vw;
+  height: 100vh;
+  background-color: #F8F9FA;
+}
+
+.menu-container {
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  width: fit-content;
+  height: 45px;
+  background-color: white;
+  display: flex;
+  border-radius: 12px;
+  border: 1px solid #eaeaea;
+  font-family:  'Poppins';
+  font-size: 12px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, .05);
+}
+
+.menu .section {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 24px;
+}
+
+.drop-down {
+  width: 125px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.drop-down i {
+  font-size: 20px;
+  user-select: none;
+  margin: 0 12px;
+  cursor: pointer;
+}
+
+.options {
+  position: absolute;
+  left: 0; top: 150%;
+  width: 100%;
+  height: 175px;
+  overflow-y: scroll;
+  border-radius: 4px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, .05);
+  background-color: white;
+  animation: Slide .15s ease-in forwards;
+}
+
+.options::-webkit-scrollbar {
+  display: none;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 20%;
+  padding: 0 8px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: background-color .2s ease-in;
+}
+
+.option:hover {
+  background-color: #eaeaea;
+}
+
+.font-section {
+  width: 200px;
+}
+
+.font-size {
+  width: 50px;
+}
+
+.styles-section {
+  width: 110px;
+}
+
+.style {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color .2s ease-in;
+}
+
+.style:hover {
+  background-color: #eaeaea;
+}
+
+.font-section::after,
+.styles-section::after,
+.colors-section::after {
+  content: '';
+  position: absolute;
+  right: 0; top: 50%;
+  transform: translateY(-50%);
+  width: .5px;
+  height: 50%;
+  background-color: #aaaaaa;
+}
+
+.colors-section {
+  width: 70px;
+}
+
+.color-selector {
+  position: relative;
+  width: 30px;
+  height: 30px;
+}
+
+.color-selector input {
+  position: absolute;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  visibility: hidden;
+}
+
+.color-selector label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.swatch {
+  position: absolute;
+  left: 50%; bottom: 5%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 3px;
+}
+
+.alignment-section {
+  width: 100px;
+}
+
+.alignment-section div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color .2s ease-in;
+}
+
+.alignment-section div:hover {
+  background-color: #eaeaea;
+}
+
+.editor-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 90%;
+  box-sizing: border-box;
+  padding: 28px 0;
+  overflow-y: scroll;
+}
+
+.editor {
+  width: 794px;
+  height: 1123px;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, .05);
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+.editor div::before {
+  content: '\200B';
+  display: inline-block;
+}
+
+.BOLD {
+  font-weight: bold;
+}
+
+.ITALIC {
+  font-style: italic;
+}
+
+.UNDERLINED {
+  text-decoration: underline;
+}
+
+.LEFT {
+  text-align: left;
+}
+
+.CENTER {
+  text-align: center;
+}
+
+.RIGHT {
+  text-align: right;
+}
+
+@keyframes Slide {
+  from {
+    transform: translateY(0);
+  } to {
+    transform: translateY(10px);
+  }
+}
