@@ -37,7 +37,7 @@ applyToModel('STYLE_BOLD')
 No ```document.execCommand``` hacks here — just a clean, controlled API for applying styles like bold, italic, underline, etc. It’s modular, extensible, and built to scale.
 
 ## Screeshots
-![Demo Screenshoot](/public/screenshots/home_page.png)
+![Demo Screenshoot](/public/screenshots/screenshoot2.png)
 ![Demo Screenshoot](/public/screenshots/screenshoot2.png)
 
 ## License
